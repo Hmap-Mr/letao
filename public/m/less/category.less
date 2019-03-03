@@ -1,0 +1,39 @@
+@import "./base.less";
+
+
+#main {
+    display: flex;
+    background-color: #ccc;
+    .category-left {
+        width: .8rem;
+        .swiper-container {
+            height: 100%;
+        }
+        ul {
+            .mui-table-view-cell:after {
+                left: 0;
+            }
+            li.active {
+                background-color: #ccc;
+                color: @main-color;
+            }
+        }
+    }
+    .category-right {
+        flex: 1;
+        padding: .1rem;
+        .swiper-container {
+            height: 100%;
+        }
+        a {
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+

@@ -92,3 +92,35 @@ img {
   color: gold;
 }
 /* 底部区域结束 */
+#main {
+  display: flex;
+  background-color: #ccc;
+}
+#main .category-left {
+  width: .8rem;
+}
+#main .category-left .swiper-container {
+  height: 100%;
+}
+#main .category-left ul .mui-table-view-cell:after {
+  left: 0;
+}
+#main .category-left ul li.active {
+  background-color: #ccc;
+  color: #006699;
+}
+#main .category-right {
+  flex: 1;
+  padding: .1rem;
+}
+#main .category-right .swiper-container {
+  height: 100%;
+}
+#main .category-right a {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+}
+#main .category-right a img {
+  width: 100%;
+}

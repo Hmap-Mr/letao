@@ -28,6 +28,12 @@ img {
     .left {
         width: .45rem;
         height: .45rem;
+        a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            line-height: .45rem;
+        }
     }
     .center {
         flex: 1;
@@ -36,6 +42,14 @@ img {
         h4 {
             line-height: .45rem;
             font-weight: normal;
+        }
+        form {
+            input {
+                background-color: #fff;
+                height: .35rem;
+                margin-bottom: 0;
+                color: #000;
+            }
         }
     }
     .right {
@@ -51,7 +65,6 @@ img {
 #main {
     padding: 45px 0;
     height: 100vh;
-    position: relative;
     .mui-scroll-wrapper {
         position: relative;
         height: 100%;
@@ -78,7 +91,7 @@ img {
             line-height: 1;
         }
         &.active {
-            
+            color: gold;
         }
     }
 }

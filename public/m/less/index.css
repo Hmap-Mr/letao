@@ -15,7 +15,7 @@ h6 {
 img {
   vertical-align: middle;
 }
-/* 头部区域 */
+/* 头部区域开始 */
 #header {
   width: 100%;
   position: fixed;
@@ -45,7 +45,8 @@ img {
   text-align: center;
   line-height: .45rem;
 }
-/* 主体区域 */
+/* 头部区域结束 */
+/* 主体区域开始 */
 #main {
   padding: 45px 0;
   height: 100vh;
@@ -55,7 +56,8 @@ img {
   position: relative;
   height: 100%;
 }
-/* 底部区域 */
+/* 主体区域结束 */
+/* 底部区域开始 */
 #footer {
   width: 100%;
   position: fixed;
@@ -75,6 +77,10 @@ img {
 #footer a span {
   line-height: 1;
 }
+#footer a.active {
+  color: gold;
+}
+/* 底部区域结束 */
 /* 主体区域开始 */
 #main {
   /* 轮播图区域开始 */

@@ -92,3 +92,62 @@ img {
   color: gold;
 }
 /* 底部区域结束 */
+#main {
+  background-color: #fff;
+}
+#main .search-form {
+  padding: .1rem;
+}
+#main .search-form form {
+  display: flex;
+}
+#main .search-form form input {
+  flex: 1;
+  height: .36rem;
+  border: 1px solid #006699;
+  background-color: #fff;
+  text-align: left;
+  font-size: .14rem;
+  border-radius: .06rem 0 0 .06rem;
+  margin-bottom: 0;
+}
+#main .search-form form button {
+  width: .6rem;
+  height: .36rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 .06rem .06rem 0;
+}
+#main .search-history .title {
+  padding: .1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0rem 0rem .02rem #666;
+  border-radius: .06rem .06rem 0 0;
+}
+#main .search-history .title a {
+  color: #666;
+}
+#main .search-history .content {
+  box-shadow: 0rem 0rem .02rem #666;
+  border-radius: 0 0 .06rem .06rem;
+}
+#main .search-history .content .mui-table-view-cell:after {
+  left: 0;
+}
+#main .search-history .mui-card-header span {
+  font-size: .14rem;
+}
+#main .search-history .mui-card-header a {
+  font-size: .14rem;
+  color: #666;
+}
+#main .search-history .mui-card-header .mui-table-view-cell:after {
+  left: 0;
+}
+#main .search-history .mui-card-content {
+  height: 100%;
+}
+#main .search-history .mui-card-content .mui-scroll-wrapper {
+  height: 100%;
+}
