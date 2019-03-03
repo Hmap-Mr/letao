@@ -56,4 +56,4 @@ node_modules
 
 #根目录的demo
 
-./*.html
+*.html

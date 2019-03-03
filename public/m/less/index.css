@@ -1,0 +1,154 @@
+html {
+  font-size: 26.66667vw;
+}
+body {
+  font-size: .14rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+/* 头部区域 */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  background-color: #006699;
+  color: #fff;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+  line-height: .45rem;
+}
+#header .center h4 {
+  line-height: .45rem;
+  font-weight: normal;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+}
+/* 主体区域 */
+#main {
+  padding: 45px 0;
+  height: 100vh;
+  position: relative;
+}
+#main .mui-scroll-wrapper {
+  position: relative;
+  height: 100%;
+}
+/* 底部区域 */
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #006699;
+}
+#footer a {
+  display: flex;
+  height: .45rem;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer a span {
+  line-height: 1;
+}
+/* 主体区域开始 */
+#main {
+  /* 轮播图区域开始 */
+  /* 轮播图区域结束 */
+  /* 导航区域开始 */
+  /* 导航区域结束 */
+  /* 广告区域开始 */
+  /* 广告区域结束 */
+  /* 品牌 运动 男士 女士专区 开始 */
+  /* 品牌 运动 男士 女士专区 结束 */
+}
+#main #slide .swiper-wrapper .swiper-slide a {
+  display: block;
+}
+#main #slide .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+#main #slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+#main .nav {
+  padding: .1rem;
+}
+#main .nav .mui-row div a {
+  display: block;
+}
+#main .nav .mui-row div a img {
+  width: 100%;
+}
+#main .banner {
+  padding: .1rem;
+}
+#main .banner .left a {
+  display: flex;
+}
+#main .banner .left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#main .banner .right a {
+  display: block;
+}
+#main .banner .right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+#main .brand,
+#main .sport,
+#main .women,
+#main .man {
+  padding: .1rem;
+}
+#main .brand .title a,
+#main .sport .title a,
+#main .women .title a,
+#main .man .title a {
+  display: block;
+}
+#main .brand .title a img,
+#main .sport .title a img,
+#main .women .title a img,
+#main .man .title a img {
+  width: 100%;
+}
+#main .brand .content .mui-row a,
+#main .sport .content .mui-row a,
+#main .women .content .mui-row a,
+#main .man .content .mui-row a {
+  display: block;
+}
+#main .brand .content .mui-row a img,
+#main .sport .content .mui-row a img,
+#main .women .content .mui-row a img,
+#main .man .content .mui-row a img {
+  width: 100%;
+}
+/* 主体区域结束 */
