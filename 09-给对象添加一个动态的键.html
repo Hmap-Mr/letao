@@ -8,17 +8,18 @@
 </head>
 <body>
     <script>
-        var obj = {
-            
-        };
+        var arr = ["liudehua","刘德华","zhangsan","张三","lisi","李四"];
 
-        // var arr = ["item1","item2","item3"];
-        var name = "item1";
-        // obj.arr[0] = '张三';
-        // obj.name = '张三';
-        /* 给对象添加动态的键 键的名字是一个变量 不能使用.语法 
-        使用[]方式 obj[name] 取name变量的值 obj["item1"] = '张三' */
-        obj[name] = '张三';
+        var obj = {
+            wangwu:"王五",
+        };
+        
+        for(var i = 0;i<arr.length;i++){
+            if(i%2==0){
+                obj[arr[i]] = arr[i+1];
+            }
+        }
+
         console.log(obj);
     </script>
 </body>

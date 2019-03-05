@@ -1,0 +1,43 @@
+@import "./base.less";
+
+body {
+    background-image: linear-gradient(red blue);
+}
+#main {
+    .product-list {
+        .mui-card-header {
+            a {
+                font-size: .14rem;
+                color: #666;
+                text-align: center;
+            }
+            a.active {
+                color: #ff6400;
+            }
+        }
+        .mui-card-content {
+            .mui-col-xs-6 {
+                box-shadow: 0 .01rem 0 #ccc;
+                &:nth-child(odd){
+                    // border-left: 1px solid #ccc;
+                    box-shadow: 0.01rem .01rem 0 #ccc
+                }
+            }
+            .product {
+                text-align: center;
+                padding: .1rem .05rem;
+                .product-img {
+                    width: 100%;
+                }
+                .product-name {
+                    overflow: hidden;//隐藏溢出部分
+                    text-overflow: ellipsis;//溢出用省略号显示
+                    display: -webkit-box;//将对象作为弹性伸缩盒子模型显示
+                    -webkit-box-orient: vertical;//从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+                    -webkit-line-clamp: 2;//这个属性不是css的规范属性,需要组合上面两个属性,表示显示的行数。
+                }
+            }
+            
+        }
+    }
+}

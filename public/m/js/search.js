@@ -41,6 +41,8 @@ $(function(){
 
             queryHistory();
             $(".input-search").val('');
+            window.location.href = "productlist.html?search="+search+"&time="+new Date().getTime();
+                   
         })
     };
     // 查询记录
@@ -52,7 +54,7 @@ $(function(){
     function deleteHistory(){
         $(".search_ul").on("tap","li span",function(){
             var index = $(this).parent().data('index');
-            $(this).parent().remove();
+            // $(this).parent().remove();
             var searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
             searchHistory.splice(index,1);
             localStorage.setItem("searchHistory",JSON.stringify(searchHistory));
@@ -62,7 +64,8 @@ $(function(){
     // 清空记录
     function clearHistory(){
         $(".clear_btn").on("tap",function(){
-            localStorage.setItem("searchHistory",JSON.stringify([]));
+            // localStorage.setItem("searchHistory",JSON.stringify([]));
+            localStorage.removeItem("searchHistory");
             queryHistory();
         })
     };
@@ -79,5 +82,7 @@ $(function(){
             deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏        
         });
     }
+
+
 });
 

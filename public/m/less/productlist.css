@@ -115,3 +115,34 @@ img {
   color: gold;
 }
 /* 底部区域结束 */
+body {
+  background-image: linear-gradient(red blue);
+}
+#main .product-list .mui-card-header a {
+  font-size: .14rem;
+  color: #666;
+  text-align: center;
+}
+#main .product-list .mui-card-header a.active {
+  color: #ff6400;
+}
+#main .product-list .mui-card-content .mui-col-xs-6 {
+  box-shadow: 0 .01rem 0 #ccc;
+}
+#main .product-list .mui-card-content .mui-col-xs-6:nth-child(odd) {
+  box-shadow: 0.01rem 0.01rem 0 #ccc;
+}
+#main .product-list .mui-card-content .product {
+  text-align: center;
+  padding: .1rem .05rem;
+}
+#main .product-list .mui-card-content .product .product-img {
+  width: 100%;
+}
+#main .product-list .mui-card-content .product .product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
