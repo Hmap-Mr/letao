@@ -1,1 +1,89 @@
-@import "./base.less";
+@import 'base.less';
+
+/* 购物车主体商品的样式 */
+#main {
+    // 因为这个购物车页面底部多了一个订单区域底部在往上挤一点
+    padding-bottom: .9rem;
+    .cart-list {
+        li {
+            a {
+                display: flex;
+
+                .left {
+                    width: 0.8rem;
+                    text-align: center;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    .mui-checkbox {
+                        position: static;
+
+                        // 设置复选框里面的输入框定位值 水平居中 垂直居底部
+                        // 子绝父相相对mui-checkbox的元素 但是父元素没高度 left有高
+                        // 让input去参照left 把 mui-checkbox的定位取消
+                        // 默认如果有top 和 bottom 生效top  把top取消
+                        input {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: auto;
+                            bottom: .1rem;
+                            &::before{
+                                color:hotpink;
+                            }
+                        }
+                    }
+
+                }
+
+                .right {
+                    flex: 1;
+                    line-height: .24rem;
+                    .product-name{
+                        color:#666;
+                      
+                    }
+                    .product-price{
+                        color:#666;
+                        
+                        span{
+                            color:red;
+                            font-weight: 600;
+                        }
+                    }
+                    .product-params{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
+                // a排除 .mui-btn 都会添加这个样式
+                &:not(.mui-btn) {
+                    // 是否允许内容换行 默认是nomarl 不设置 nowrap 强制不换行
+                    white-space: normal;
+                }
+            }
+        }
+
+    }
+}
+
+/* 购物车订单区域的样式 */
+#order{
+    position: fixed;
+    bottom: .45rem;
+    height: .45rem;
+    width: 100%;
+    line-height: .4rem;
+    display: flex;    
+    justify-content: space-between;
+    padding: .05rem;
+    background-color: #fff;
+    .order-count{
+        color:red;
+    }
+    
+}

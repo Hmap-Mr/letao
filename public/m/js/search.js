@@ -50,6 +50,7 @@ $(function(){
         var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
         $(".search_ul").html(template("searchHistory_li",{list:searchHistory}));
     };
+    var isTrue = false;
     // 删除记录
     function deleteHistory(){
         $(".search_ul").on("tap","li span",function(){
@@ -59,6 +60,7 @@ $(function(){
             searchHistory.splice(index,1);
             localStorage.setItem("searchHistory",JSON.stringify(searchHistory));
             queryHistory();
+            isTrue = true;
         });
     };
     // 清空记录
@@ -83,6 +85,16 @@ $(function(){
         });
     }
 
-
+    //点击历史记录 也可以实现搜索跳转功能
+    function gotoProductlist(){
+        $(".search-history .search_ul").on("tap","li",function(){
+            if(isTrue==false){
+                let search = $(this).data("search");
+                window.location.href = "productlist.html?search="+search+"&time="+new Date().getTime();
+            }
+            isTrue = false;
+        });
+    };
+    gotoProductlist();
 });
 

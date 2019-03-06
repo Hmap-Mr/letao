@@ -127,7 +127,7 @@ $(function(){
             $(".btn-search").trigger("tap");
         }
     }
-
+    // 上下拉 函数
     function pullRefresh(){
         mui.init({
             pullRefresh: {
@@ -184,4 +184,13 @@ $(function(){
         }
     }
     pullRefresh();
+
+    // 点击button跳转到detail页面
+    function gotoDetail(){
+        $(".mui-card-content .mui-row").on("tap",".product-buy",function(){
+            let id = $(this).data("id");
+            window.location.href = "detail.html?id="+id;
+        });
+    }
+    gotoDetail();
 })
