@@ -41,6 +41,14 @@ $(function(){
             data:{
                 id:id
             },
+            beforeSend:function(){
+                $(".mask").show();
+            },
+            complete:function(){
+                setTimeout(function(){
+                    $(".mask").hide();
+                },3000);
+            },
             success:function(obj){
                 // console.log(obj);
                 $(".category-right .mui-row").html(template("category_right_div",obj));

@@ -21,7 +21,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 999;
   display: flex;
   background-color: #006699;
   color: #fff;
@@ -65,6 +65,7 @@ img {
 #main {
   padding: 45px 0;
   height: 100vh;
+  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
@@ -93,6 +94,23 @@ img {
   border-color: #006699;
   border-radius: 0 .06rem .06rem 0;
 }
+#main .mask {
+  position: absolute;
+  z-index: 995;
+  background-color: #242424;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#main .mask img {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /* 主体区域结束 */
 /* 底部区域开始 */
 #footer {
@@ -100,7 +118,7 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 999;
   background-color: #006699;
 }
 #footer a {

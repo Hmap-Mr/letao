@@ -21,7 +21,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 999;
     display: flex;
     background-color: @main-color;
     color: #fff;
@@ -68,6 +68,7 @@ img {
 #main {
     padding: 45px 0;
     height: 100vh;
+    position: relative;
     .mui-scroll-wrapper {
         position: relative;
         height: 100%;
@@ -98,6 +99,24 @@ img {
             }
         }
     }
+    .mask {
+        position: absolute;
+        z-index: 995;
+        // background-color: #fff;
+        background-color: #242424;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        img {
+            width: 100vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
 }
 /* 主体区域结束 */
 
@@ -107,7 +126,7 @@ img {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 999;
     background-color: @main-color;
     a {
         display: flex;

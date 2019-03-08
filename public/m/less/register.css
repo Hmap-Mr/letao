@@ -118,77 +118,15 @@ img {
   color: gold;
 }
 /* 底部区域结束 */
-/* 购物车主体商品的样式 */
-#main {
-  padding-bottom: .9rem;
+#main .btn-get-vcode {
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: .4rem;
 }
-#main .cart-list li a {
-  display: flex;
-}
-#main .cart-list li a .left {
-  width: 0.8rem;
-  text-align: center;
-  position: relative;
-}
-#main .cart-list li a .left img {
-  width: 100%;
-  display: block;
-}
-#main .cart-list li a .left .mui-checkbox {
-  position: static;
-}
-#main .cart-list li a .left .mui-checkbox input {
-  left: 50%;
-  transform: translateX(-50%);
-  top: auto;
-  bottom: .1rem;
-}
-#main .cart-list li a .left .mui-checkbox input::before {
-  color: hotpink;
-}
-#main .cart-list li a .right {
-  flex: 1;
-  line-height: .24rem;
-}
-#main .cart-list li a .right .product-name {
-  color: #666;
-}
-#main .cart-list li a .right .product-price {
-  color: #666;
-}
-#main .cart-list li a .right .product-price span {
-  color: red;
-  font-weight: 600;
-}
-#main .cart-list li a .right .product-params {
-  display: flex;
-  justify-content: space-between;
-}
-#main .cart-list li a:not(.mui-btn) {
-  white-space: normal;
-}
-/* 购物车订单区域的样式 */
-#order {
-  position: fixed;
-  bottom: .45rem;
-  height: .45rem;
-  width: 100%;
-  line-height: .4rem;
-  display: flex;
-  justify-content: space-between;
+#main .last-btn {
   padding: .05rem;
-  background-color: #fff;
 }
-#order .order-count {
-  color: red;
-}
-/* 去掉弹出框间距 */
-.mui-popup-inner {
-  padding: 0.15rem 0;
-}
-.mui-popup-inner .product-size span {
-  line-height: .33rem;
-}
-.mui-popup-inner .product-size button {
-  margin-bottom: 0.05rem;
+#main .last-btn .btn-register {
+  width: 100%;
 }
