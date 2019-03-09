@@ -1,3 +1,7 @@
+body,
+html {
+  height: 100%;
+}
 #main {
   display: flex;
   height: 100%;
@@ -39,6 +43,7 @@
 }
 #main .right {
   flex: 1;
+  height: 100%;
 }
 #main .right .title {
   padding: 20px;
