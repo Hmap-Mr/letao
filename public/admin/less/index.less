@@ -1,0 +1,90 @@
+
+#main {
+    display: flex;
+    height: 100%;
+
+    .left {
+        width: 200px;
+        height: 100%;
+        background-color: skyblue;
+        .user-info{
+            padding: 30px;
+            img{
+                width: 140px;
+                height: 140px;
+                border:10px solid #fff;
+                box-shadow: 0px 0px 2px hotpink;
+                border-radius: 50%;
+            }
+            p{
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        .list-group{
+            .list-group-item{
+                background-color: skyblue;
+                border:0;
+                &.active{
+                    background-color: hotpink;
+                    border-color: hotpink;
+                }
+                &:hover{
+                    color:#fff;
+                    background-color: hotpink;
+                    border-color: hotpink;
+                }
+            }
+            // .collapse{ 注意不能使用这种会变化的类名去设置样式
+            #collapseExample{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .title {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .menu-btn {
+                font-size: 30px;
+                background-color: yellowgreen;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .exit-btn {
+                font-size: 16px;
+                background-color: yellowgreen;
+                width: 60px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #eee;
+            .table{
+                background-color: #fff;
+                th,td{
+                    text-align: center;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

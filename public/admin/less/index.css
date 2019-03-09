@@ -1,0 +1,81 @@
+#main {
+  display: flex;
+  height: 100%;
+}
+#main .left {
+  width: 200px;
+  height: 100%;
+  background-color: skyblue;
+}
+#main .left .user-info {
+  padding: 30px;
+}
+#main .left .user-info img {
+  width: 140px;
+  height: 140px;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 2px hotpink;
+  border-radius: 50%;
+}
+#main .left .user-info p {
+  text-align: center;
+  margin-top: 10px;
+}
+#main .left .list-group .list-group-item {
+  background-color: skyblue;
+  border: 0;
+}
+#main .left .list-group .list-group-item.active {
+  background-color: hotpink;
+  border-color: hotpink;
+}
+#main .left .list-group .list-group-item:hover {
+  color: #fff;
+  background-color: hotpink;
+  border-color: hotpink;
+}
+#main .left .list-group #collapseExample {
+  padding-left: 20px;
+}
+#main .right {
+  flex: 1;
+}
+#main .right .title {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .right .title .menu-btn {
+  font-size: 30px;
+  background-color: yellowgreen;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#main .right .title .exit-btn {
+  font-size: 16px;
+  background-color: yellowgreen;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#main .right .content {
+  padding: 20px;
+  background-color: #eee;
+}
+#main .right .content .table {
+  background-color: #fff;
+}
+#main .right .content .table th,
+#main .right .content .table td {
+  text-align: center;
+  line-height: 30px;
+}
